@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:white;
+    height: 650px;
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    background-color: #272829;
+    color: #c5c5c5;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: xx-large;
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px 1px black;
+}
+.navbar ul li{
+    float: left;
+    list-style: none;
+    margin: 0 25px;
+    cursor: pointer;
+}
+.navbar ul li:hover{
+    color: #ffffff;
+}
+.container1{
+    height: 280px;
+    width: 200px;
+    background-color: #272829;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius:10px;
+    box-shadow: 0px 0px 8px 2px black;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form #calc {
+    width: 180px;
+    height: 40px;
+    margin-bottom: 8px;
+    font-size: x-large;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(237, 237, 237);
+}
+.buttons input{
+    height: 33px;
+    width: 33px;
+    margin: 4px 0;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color:#393939;
+    font-size: large;
+    color: #ffffff;
+    box-shadow: 0px 0px 10px 0px rgb(45, 45, 45);
+}
+.buttons input:hover{
+    background-color: rgb(255, 255, 255);
+    font-weight: bolder;
+    color: black;
+}
+#cancel-btn{
+    background-color:#FD8D14;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(48, 48, 48);
+    font-size: x-small;
+}
+#equal-btn{
+    background-color: #FE0000;
+    cursor: pointer;
+    border: 2px solid rgb(47, 47, 47);
+}
+#cancel-btn:hover{
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+#equal-btn:hover{
+    transition: 0.9s;
+    transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -ms-transform: rotate(360deg);
+    font-weight: bolder;
+    color: white;
+}
+.footer-cnt{
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top:600px ;
+    height: 130px;
+    background-color: #272829;
+    position: sticky;
+    color: rgb(212, 212, 212);
+    text-align: center;
+    font-size: smaller;
+    box-shadow: 1px 1px 10px 5px gray;
+}
+.last-line{
+    font-size: larger;
+    margin-top: 8px;
+    cursor: pointer;
+}
